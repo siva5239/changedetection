@@ -1,0 +1,11 @@
+
+<div>
+    <p>Primitive Data: {{ primitiveData }}</p>
+    <button (click)="updatePrimitive()">Update Primitive</button>
+  
+    <p>Non-Primitive Data: {{ nonPrimitiveData.count }}</p>
+    <button (click)="updateNonPrimitive()">Update Non-Primitive</button>
+  
+    <app-child [data]="nonPrimitiveData"></app-child>
+  </div>
+  
